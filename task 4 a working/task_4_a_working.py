@@ -79,7 +79,7 @@ extract_no_index = extracted_data.to_string(index=False)
 
 #extracts more meaningful data from the results for comparison
 def compare_data():
-    
+    #yolo
     compare_df = extracted_data[['Airline', 'Price']]
    
     column = compare_df['Price']
