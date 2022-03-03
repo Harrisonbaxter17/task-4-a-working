@@ -69,7 +69,7 @@ month = get_date()
 
 #gets the main list of data that matches user search criteia and displays it
 def get_data():
-    df = pd.read_csv("N:\Downloads\Task4a_data.csv")
+    df = pd.read_csv("N:\Downloads\Task4a_data.csv")     # added path location to the cvs file 
     extract = df.loc[(df['Month'] == month) & (df['Destination'] == destination), df.columns != "Commission (%)"]
     print("We have found these flights that match your criteria:")
     return extract
